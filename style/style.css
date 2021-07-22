@@ -150,13 +150,39 @@ div#wrap {
     width: 1200px;
     margin: 0 auto;
 }
+/* div#wrap end */
+/* div#slide start */
 div#slide {
     height: 300px;
+    overflow: hidden;
 }
+#slide a {
+    width: 1200px;
+    height: 300px;
+    display: inline-block;
+
+    position: relative;
+}
+#slide span {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid #aaa;
+    background-color: rgba(255, 255, 255, 0.685);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+div#shuttleFrame {
+    width: 3660px;
+}
+/* div#slide end */
 div#contents {
     height: 200px;
 }
-/* div#wrap end */
 
 /* div#footerFrame start */
 div#footerFrame {
