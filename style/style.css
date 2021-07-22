@@ -1,34 +1,34 @@
 @charset "UTF-8";
 * {
-  color: #333;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    color: #333;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  background-color: #fff;
+    background-color: #fff;
 }
 a:link {
-  color: #444;
+    color: #444;
 }
 a:visited {
-  color: #444;
+    color: #444;
 }
 a:hover {
-  color: #555;
+    color: #555;
 }
 a:active {
-  color: #555;
+    color: #555;
 }
 img {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
 .flexContainer {
-  display: flex;
+    display: flex;
 }
 
 header,
@@ -38,101 +38,136 @@ section,
 article,
 aside,
 footer {
-  display: block;
+    display: block;
 }
 /* IE 낮은 버전에서 동일한 결과 출력용 */
 
 /* guide line start */
 div#headerFrame {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 header#header {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 div#wrap {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 div#footerFrame {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 footer#footer {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 div#slide {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 div#contents {
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 /* guide line end */
 
 /* div#headerFrame */
 div#headerFrame {
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 100px;
 
-  background-color: rgba(19, 204, 250, 0.2);
+    background-color: rgba(19, 204, 250, 0.2);
 }
 header#header {
-  width: 1200px;
-  height: 100px;
-  margin: 0 auto;
-  justify-content: space-between;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 #header div#headerLogo {
-  width: 200px;
-  height: 100px;
-  line-height: 100px;
-  border: 1px solid #000;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #000;
 }
 
 #header nav#gnb {
-  border: 1px solid #000;
-  margin: 0 40px;
-  flex: 1;
+    border: 1px solid #000;
+    margin: 0 40px;
+    flex: 1;
 }
 #header #gnb ul#mainMenu {
-  height: 100px;
-  border: 1px solid #000;
-  justify-content: flex-end;
-  align-items: flex-end;
+    height: 100px;
+    border: 1px solid #000;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ul#mainMenu li.mainLi {
+    border: 1px solid #aaa;
 }
 #header #gnb a {
-  width: 150px;
-  height: 42px;
-  text-align: center;
-  line-height: 42px;
-  display: inline-block;
-  border: 1px solid #aaa;
+    width: 150px;
+    height: 42px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 42px;
+    display: inline-block;
+    /* border: 1px solid #aaa; */
+}
+#gnb .mainLi:hover > a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(81, 195, 240);
+}
+#header .subMenu a {
+    color: #fff;
+}
+#gnb .subLi > a:hover {
+    color: #444;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 #header .subMenu {
-  position: absolute;
+    position: absolute;
+    z-index: 2;
+    display: none;
 }
+/* GNB 메뉴의 서브메뉴 배경 */
+div#subMenuBG {
+    width: 1200px;
+    height: 170px;
+    /* border: 1px solid #f80; */
+    margin: 0 auto;
+    background-color: rgb(81, 195, 240);
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* GNB 메뉴의 서브메뉴 배경 */
+
 /* div#headerFrame */
 
 /* div#wrap start */
 div#wrap {
-  width: 1200px;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 div#slide {
-  height: 300px;
+    height: 300px;
 }
 div#contents {
-  height: 200px;
+    height: 200px;
 }
 /* div#wrap end */
 
 /* div#footerFrame start */
 div#footerFrame {
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 100px;
 
-  background-color: rgba(19, 204, 250, 0.2);
+    background-color: rgba(19, 204, 250, 0.2);
 }
 footer#footer {
-  width: 1200px;
-  height: 100px;
-  margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
 }
 /* div#footerFrame end */
